@@ -34,7 +34,7 @@
     grid-area: Derecha;
     display: grid;
     gap: 5px;
-    padding: 1px;
+    padding: 10px;
     text-align: center;
     grid-template-areas: 
     "Dionisio"
@@ -74,7 +74,7 @@
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 0px;
-    padding: 10px;
+    padding: 20px;
 }
     
 .instalaciones { 
