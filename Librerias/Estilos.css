@@ -1,0 +1,160 @@
+:root{
+    --hf-fondo: #FF7000;
+    --hf-fontc: #000004;
+    --hf-bboton:#B09B74;
+    --hf-cboton:#CAC1AE;
+}
+@font-face {
+    font-family: Camp;
+    src: url("../Fuentes/Geek.ttf") format("truetype");
+}
+@font-face {
+    font-family: Letras;
+    src: url("../Fuentes/Diogenes.ttf") format("truetype");
+}
+body{
+    background-image: url("../Imagenes/Fondo1.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+.logo{
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+    margin: auto;
+    box-shadow: none;
+}
+.titulo{
+    font-family: Camp;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 70px;
+    color:var(--hf-fontc);
+    margin: auto;
+}
+.Arriba{
+    font-size: 60px;
+    text-align: center;
+    display: block;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .25);
+    background-color: var(--hf-fondo);
+}
+.Abajo{
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .25);
+    background-color: var(--hf-fondo);
+    margin-bottom: 0%;
+}
+.Izquierda{
+    background-color: #C2B091;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.Izquierda > *{
+    border: 1px solid var(--hf-bboton); 
+    padding: 10px;
+    margin: 1px;
+    background-color: var(--hf-cboton); 
+    color: black; 
+    font-size: 20px;
+    font-family: Letras;
+    border-radius: 50px;
+    text-decoration: none;
+
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	z-index: 99;
+}
+.Izquierda > *:hover{
+    text-decoration: none;
+    background:var(--hf-cboton); 
+	padding: 10px;
+	box-shadow: 0px 5px 0px var(--hf-bboton);
+    transform: translateY(-3px);
+}
+.Izquierda>*:active{
+    background: var(--hf-bboton);
+	box-shadow: none;
+    transform: translateY(3px);
+}
+.Zeus:hover{
+    color: #F4FF16;
+}
+.Hera:hover{
+    color: #f2f885;
+}
+.Poseidon:hover{
+    color: #2d70ff;
+}
+.Demeter:hover{
+    color: #24CA1C;
+}
+.Ares:hover{
+    color: #CA1C1C;
+}
+.Atenea:hover{
+    color: #FFFFFF;
+}
+.Apolo:hover{
+    color: #ffff00;
+}
+.Artemisa:hover{
+    color: #ccfff9;
+}
+.Hefesto:hover{
+    color: #E49000;
+}
+.Afrodita:hover{
+    color: #E412E0;
+}
+.Hermes:hover{
+    color: #9e883e;
+}
+.Dionisio:hover{
+    color: #9C00E4;
+}
+.Derecha{
+    background-color: var(--hf-bboton);
+    padding: auto;
+    margin-top: 5px;
+}
+img{
+    width: 180px;
+    height: 300px;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 5px 5px 5px #424242;
+}
+img:hover{
+    width: 180px;
+    height: 300px;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 5px 5px 5px #424242;
+    transform: translateY(3px);
+}
+p{
+    font-family: Letras;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+.cargo{
+    margin: 5px;
+}

@@ -1,0 +1,79 @@
+.Contenedor{
+    display: grid;
+    grid-gap: 5px;
+    height: 100vh;
+    grid-template-areas: 
+        "Arriba"
+        "Izquierda"
+        "Derecha"
+        "Contenido"
+        "Abajo";
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 185px 1fr 80px;
+}
+.Contenedor > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 5;
+    box-shadow: 2px 2px 2px #424242;
+}
+.Contenido::before{
+    border-radius: 50px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    opacity: 0.6;
+    padding: 10px;
+}
+.Arriba{
+    grid-area: Arriba;
+    display: grid;
+    grid-template-columns: 200px 2fr;
+}
+.Izquierda{
+    grid-area: Izquierda;
+    display: grid;
+    gap: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.Derecha{
+    grid-area: Derecha;
+    display: grid;
+    gap: 5px;
+    padding: 1px;
+    text-align: center;
+    grid-template-areas: 
+    "Dionisio"
+    "Quiron";
+}
+.Contenido{
+    grid-area: Contenido;
+}
+.Abajo{
+    grid-area: Abajo;
+}
+@media (min-width:500px){
+    .Contenedor{
+        grid-template-areas: 
+        "Arriba Arriba Arriba"
+        "Izquierda Contenido Derecha"
+        "Abajo Abajo Abajo"
+        ;
+    }
+}
+.Director{
+    grid-area: Dionisio;
+}
+.Quiron{
+    grid-area: Quiron;
+}
