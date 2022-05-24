@@ -10,35 +10,14 @@
         "Abajo";
     grid-template-columns: 200px 1fr 200px;
     grid-template-rows: 185px 1fr 80px;
-}
-.Contenedor > *{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 2px;
-    border-radius: 10px;
-    position: relative;
-    z-index: 5;
-}
-.Contenido::before{
-    border-radius: 50px;
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #fff;
-    opacity: 0.6;
-    padding: 10px;
-    box-shadow: 2px 2px 2px #424242;
+    grid-gap: 5px;
 }
 .Arriba{
     grid-area: Arriba;
     display: grid;
     grid-template-columns: 200px 2fr;
     box-shadow: 2px 2px 2px #424242;
+    border-radius: 10px;
 }
 .Izquierda{
     grid-area: Izquierda;
@@ -47,6 +26,9 @@
     padding: 5px;
     text-align: center;
     box-shadow: 2px 2px 2px #424242;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
 }
 .Derecha{
     grid-area: Derecha;
@@ -57,13 +39,15 @@
     grid-template-areas: 
     "Dionisio"
     "Quiron";
-}
-.Contenido{
-    grid-area: Contenido;
+    box-shadow: 2px 2px 2px #424242;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
 }
 .Abajo{
     grid-area: Abajo;
     box-shadow: 2px 2px 2px #424242;
+    border-radius: 10px;
 }
 @media (min-width:500px){
     .Contenedor{
@@ -80,3 +64,23 @@
 .Quiron{
     grid-area: Quiron;
 }
+.instalaciones{
+    grid-area: instalaciones;
+}
+
+.Contenido {
+    display: grid;
+    grid-template-columns:300px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    padding: 10px;
+}
+    
+.instalaciones { 
+    grid-area: 1 / 1 / 2 / 2;
+    justify-content: center;
+    text-align: center;
+    align-items: center; 
+}
+.intro { grid-area: 1 / 2 / 2 / 3; }
