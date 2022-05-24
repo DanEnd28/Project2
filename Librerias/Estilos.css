@@ -133,14 +133,14 @@ body{
     padding: auto;
     margin-top: 5px;
 }
-img{
+.pics{
     width: 180px;
     height: 300px;
     border-radius: 20px;
     margin: auto;
     box-shadow: 5px 5px 5px #424242;
 }
-img:hover{
+.pics:hover{
     width: 180px;
     height: 300px;
     border-radius: 20px;

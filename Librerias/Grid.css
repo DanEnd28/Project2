@@ -19,7 +19,6 @@
     border-radius: 10px;
     position: relative;
     z-index: 5;
-    box-shadow: 2px 2px 2px #424242;
 }
 .Contenido::before{
     border-radius: 50px;
@@ -33,11 +32,13 @@
     background: #fff;
     opacity: 0.6;
     padding: 10px;
+    box-shadow: 2px 2px 2px #424242;
 }
 .Arriba{
     grid-area: Arriba;
     display: grid;
     grid-template-columns: 200px 2fr;
+    box-shadow: 2px 2px 2px #424242;
 }
 .Izquierda{
     grid-area: Izquierda;
@@ -45,6 +46,7 @@
     gap: 5px;
     padding: 5px;
     text-align: center;
+    box-shadow: 2px 2px 2px #424242;
 }
 .Derecha{
     grid-area: Derecha;
@@ -61,6 +63,7 @@
 }
 .Abajo{
     grid-area: Abajo;
+    box-shadow: 2px 2px 2px #424242;
 }
 @media (min-width:500px){
     .Contenedor{
